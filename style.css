@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anek+Devanagari:wght@300&family=Baloo+Paaji+2&family=Inter+Tight:wght@200&family=Julius+Sans+One&family=League+Gothic&family=Manuale&family=Noto+Sans+KR:wght@300&family=Paytone+One&family=Roboto&family=Signika+Negative&family=Spline+Sans&family=Unbounded:wght@300&display=swap'); 
+*{
+     box-sizing: border-box;
+     margin: 0%;
+     padding: 0%;
+     --nav:rgb(255, 255, 255);
+     --main:rgb(255, 255, 255);
+     --footer: black;
+     --header:white;
+     --listcolor:rgb(238, 118, 49);
+     --listfont: 'Spline Sans', sans-serif;
+     --listsize:22px;
+     --h1:'Baloo Paaji 2', cursive;
+     --para: 'Noto Sans KR', sans-serif;
+     --parasize:19px;
+     --h2:'Anek Devanagari', sans-serif;
+     --h3: 'Signika Negative', sans-serif;
+      --para2size:18px;
+ }
+ 
+ #opens{
+     display: none;
+ }
+ #closes{
+     display: none;
+ }
+nav{
+     width: 100%;
+     background-color:var(--nav);
+     padding: 18px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+nav ul{
+     display: flex;
+     
+}
+nav ul li{
+     font-size: var(--listsize);
+     font-family: var(--listfont);
+     padding: 18px;
+     list-style: none;
+     color: var(--listcolor);
+}
+nav ul a{
+     text-decoration: none;
+}
+header{
+     width: 100%;
+     
+     background: white;
+     border: 1px solid black;
+     padding: 18px;
+}
+main{
+     width: 70%;
+     padding: 25px;
+     margin: auto;
+     display:flex ;
+     flex-direction: column;
+     gap:25px;
+}
+main h1{
+     font-family: var(--h1);
+     text-align: center;
+     letter-spacing: 2px;
+     word-spacing: 9px;
+}
+main h2{
+     font-family: var(--h2);
+     letter-spacing: 2px;
+}
+main p{
+     font-family: var(--para);
+     letter-spacing: 1px;
+}
+
+footer{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     background-color: black;
+     padding: 18px;
+     height: 25vh;
+     align-items: center;
+     font-family: var(--listfont);
+}
+footer a{
+     text-decoration: none;
+     color: white;
+}
+ 
+footer li{
+     list-style: none;
+}
+footer ul{
+     display: flex;
+     gap:30px;
+}
+i{
+     font-size: 25px;
+}
+main pre{
+     border-radius: 18px;
+  
+}
+#white{
+     display:none;
+}
+#moon{
+     display: none;
+}
+ p{
+     line-height: 35px;
+ }
+ h3{
+     font-family: var(--h3);
+     letter-spacing: 2px;
+ }
+ #up{
+     position: fixed;
+     z-index: 1;
+     top:85vh;
+     left:90%;
+     background: rgb(234, 75, 75);;
+     padding: 9px;
+     border: 1px solid rgb(255, 251, 251);
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     box-shadow: 0 0 50px rgb(255, 245, 245);
+     cursor: pointer;
+
+ }
+@media screen and (max-width:800px) {
+     #up{
+          left:80%;
+     }
+     nav{
+          justify-content: space-around;
+          width: 100%;
+          text-align: center;
+         }
+         #opens{
+          display: block;
+     }
+          #closes{
+          display: none;
+          }
+         nav ul{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top:10%;
+          background-color: rgb(255, 255, 255);
+          width: 100%;
+          }
+     main{
+          width: 100%;
+          padding: 18px;
+     }
+     footer{
+          flex-direction: column;
+          width: 100%;
+          padding: 15px;
+          height: 50vh;
+          justify-content: center;
+          text-align: center;
+     }
+     footer h2{
+          margin-bottom: 15px;
+     }
+     footer ul{
+          flex-direction: column;
+          gap:20px;
+     }
+}
